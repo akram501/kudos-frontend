@@ -30,7 +30,7 @@ This is the React frontend for the Kudos application.
 
 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-repo/kudos-frontend.git
+git clone https://github.com/akram501/kudos-frontend.git
 cd kudos-frontend
 npm install
 npm start
