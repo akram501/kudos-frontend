@@ -10,7 +10,12 @@ export const KudosProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchRemaining();
+        const token = localStorage.getItem("access_token");
+        if (token) {
+            fetchRemaining(token);
+        } else {
+            setLoading(false);
+        }
     }, []);
 
     const fetchRemaining = async () => {
